@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  border-radius: 50%;
+}
+
+#yellow {
+  background-color: yellow;
+  text-align: left;
+  font-style: cursive;
+  padding: 2px;
+}
+
+.card {
+  background:white;
+  padding: 20px;
+  border: 1px solid black;
+  margin: 20px;
+  box-shadow: -5px -5px 15px black;
+  text-align: left;
+  font-family:fantasy;
+}

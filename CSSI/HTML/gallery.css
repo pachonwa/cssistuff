@@ -1,0 +1,29 @@
+div {
+  padding: 40px;
+}
+
+#left {
+  background: darkgreen;
+  flex: 2 1 auto;
+}
+
+#right {
+  background: lightgreen;
+  flex: 2 1 auto;
+}
+
+#title {
+  background:black;
+
+}
+#content {
+  background: red;
+  display: flex;
+  flex-direction: row;
+}
+#info {
+  background: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  box-shadow: 0 0 4px black;
+}

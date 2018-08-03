@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<title>Quilty</title>
+<style>
+
+.quilt {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.patch {
+  padding: 20px;
+  border: 20px solid darkgray;
+  background-color: lightgray;
+  margin: 1px;
+}
+</style>
+
+<div class="quilt">
+{% for patch in patches %}
+<div class="patch" style="border-color: {{patch.inner_color}}; background-color: {{patch.outer_color}};"></div>
+{% endfor %}
+</div>
+
+<br>
+<a href="/add">Add a patch</a>

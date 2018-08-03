@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<title>Guestbook</title>
+
+{% if current_user %}
+
+Welcome, {{current_user}}
+<a href="{{logout_url}}">Logout Here</a>
+
+<form action="/" method="post">
+  <input name="content"><br>
+  <button>Sign It</button>
+</form>
+
+{% else %}
+
+  <a href="{{ login_url }}">Log In Here</a>
+
+{% endif %}
+
+{% for message in messages %}
+  <div class="message">
+    <p>{{message.email}}:</p>
+    <p>{{message.content}}</p>
+  </div>
+  {% endfor %}

@@ -1,0 +1,26 @@
+This is home.
+
+<h1>Sign up Now</h1>
+<form action="/signup" method="post">
+  <label>Username</label>
+  <input name="username"><br>
+
+  <label>Password</label>
+  <input type="password" name="password"><br>
+
+  <label>Tier</label>
+  <select name="tier">
+    <option value="free">Free</option>
+    <option value="paid">Paid</option>
+    <option value="premium" selected>Premium($999/year)</option>
+  </select>
+  <br>
+
+  <label>Age<label>
+  <input type="number" name="age"><br>
+
+  <input id="newsletter" name="newsletter" type="checkbox">
+  <label for="newsletter">Sign up for the newsletter</label><br>
+
+  <button>Sign Up</button>
+</form>
