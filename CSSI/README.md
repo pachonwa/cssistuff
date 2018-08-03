@@ -1,2 +1,2 @@
 # googlecssi
-# CSSII
+CSSI
